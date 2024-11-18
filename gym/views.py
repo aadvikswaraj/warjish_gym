@@ -7,6 +7,6 @@ from gym.models import notice, gallery
 
 def home(request):
     notices = notice.objects.filter()[:10:-1]
-    photos = gallery.objects.all()
+    photos = gallery.objects.all().reverse()
     print(notices)
     return render(request, template_name="index.html", context={"notices":notices, "photos":photos})
