@@ -162,8 +162,7 @@ nav .nav-link{
     padding: 5px 0;
 }
 .facility-card img{
-    width: auto;
-    max-width: 300px;
+    width: 300px;
     height: 200px;
 }
 
