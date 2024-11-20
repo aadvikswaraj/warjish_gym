@@ -132,16 +132,16 @@ nav .nav-link{
 }
 
 /* Facilities Section */
-.facilites-section{
+.facilities-section{
     background-color: #111;
     color: #fff;
 }
-.facilites-section h2{
+.facilities-section h2{
     text-align: center;
     font-size: 30px;
     padding: 50px 0;
 }
-.facilites-cards{
+.facilities-cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -166,18 +166,18 @@ nav .nav-link{
     height: 200px;
 }
 
-/* Our Story Section */
-.story-section{
+/* About Us Section */
+.about-section{
     background-color: #1e4c1e;
     color: #fff;
     padding-bottom: 20px;
 }
-.story-section h2{
+.about-section h2{
     text-align: center;
     font-size: 30px;
     padding: 30px 0;
 }
-.story-section p{
+.about-section p{
     max-width: 1200px;
     margin: auto;
 }
@@ -393,7 +393,7 @@ footer{
     .top-content p{
         font-size: 14px;
     }
-    .story-section p{
+    .about-section p{
         font-size: 14px;
         padding: 0 15px;
     }
