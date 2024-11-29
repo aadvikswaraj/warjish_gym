@@ -22,5 +22,7 @@ from gym import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home)
+    path('', views.home),
+    path('apis/notices/', views.notices),
+    path('apis/gallery/', views.photos)
 ]  + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -175,16 +175,17 @@
     <div class="notices-popup-cnt d-none">
         <div class="notices-popup">
             <div class="head">
-                <p class="title">Notices (Last 10)</p>
+                <p class="title">Notices</p>
                 <span class="close-btn" id="notices-close-btn">X</span>
             </div>
-            <div class="body notices">
-                {% for notice in notices %}
-                <div class="notice">
-                    <p class="content">{{ notice.content }}</p>
-                    <span class="timestamp">{{ notice.date }}</span>
+            <div class="body">
+                <div class="notices"></div>
+                <div id="notices-loader-cnt" class="loader">
+                    <img src="/static/assets/images/loader.gif" alt="">
                 </div>
-                {% endfor %}
+                <div id="notices-load-more-cnt" class="load-more-btn-cnt d-none">
+                    <button type="button">Load More</button>
+                </div>
             </div>
         </div>
     </div>
@@ -195,15 +196,21 @@
                 <div class="close-btn" id="gallery-close-btn"> X</div>
             </div>
             <div class="body">
-                {% for photo in photos %}
-                <div class="photo">
-                    <img src="/media/{{ photo.image }}" alt="">
+                <div class="photos"></div>
+                <div id="photos-loader-cnt" class="loader">
+                    <img src="/static/assets/images/loader.gif" alt="">
                 </div>
-                {% endfor %}
+                <div id="photos-load-more-cnt" class="load-more-btn-cnt d-none">
+                    <button type="button">Load More</button>
+                </div>
             </div>
         </div>
     </div>
     <footer>Made By Aadvik Swaraj</footer>
+    <script>
+        var notice_pages = {{ notice_pages }};
+        var gallery_pages = {{ photo_pages }};
+    </script>
     <script src="/static/index.js"></script>
 </body>
 </html>
