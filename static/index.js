@@ -62,16 +62,12 @@ async function loadNextPageNotice() {
 loadNextPageNotice();
 document.querySelector('#notices-load-more-cnt button').addEventListener('click', loadNextPageNotice);
 
-
-
-
-
 function appendPhotoOnDOM(url) {
-    console.log(document.querySelector('.photos'));
-    document.querySelector('.gallery-popup .photos').innerHTML += `
-    <div class="photo">
-        <img src="${url}" alt="">
-    </div>`;
+    let a = document.querySelector('.gallery-popup .photos');
+    let b =  document.createElement('div');
+    b.classList.add('photo');
+    b.innerHTML = `<img src="${url}" alt="">`;
+    a.append(b);
 };
 
 var gallery_pages_count = 0;
