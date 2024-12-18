@@ -88,7 +88,7 @@ async function loadNextPageGallery() {
         };
     }
     else{
-        document.querySelector('.photos').innerHTML = `<h3 style="text-align: center; margin-top: 10px;">No Photos</h3>`;
+        document.querySelector('.gallery-popup .photos').innerHTML = `<h3 style="text-align: center; margin-top: 10px;">No Photos</h3>`;
         document.querySelector('#photos-loader-cnt').classList.add('d-none');
     };
 };
